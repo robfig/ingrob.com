@@ -1,0 +1,185 @@
+// Screen
+// ======
+
+@import "grids";
+@import "compass/css3/images";
+@import "compass/css3/transform";
+@import "compass/css3/flexbox";
+@import "compass/css3/transition";
+
+@include border-box-sizing;
+
+@import 'font-awesome.min.css';
+@import url(https://fonts.googleapis.com/css?family=Marcellus);
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Marcellus', serif;
+}
+
+body.is-loading {
+    #banner {
+        #inner {
+	    h2 {
+	        @include transform(scale(0.95));
+	        opacity: 0;
+	        &:before, 
+                &:after {
+		    width: 0;
+                    opacity: 0;
+	        }
+	    }
+            p {
+	        opacity: 0;
+            }
+        }
+
+	.more {
+	    @include transform(translateY(8.5em));
+	    opacity: 0;
+	}
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.225em;
+    line-height: 1.75em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+    font-size: 1.35em;
+}
+
+#banner {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+
+    @include background-image(linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/banner.jpg"));
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0;
+    height: 100vh;
+    min-height: 35em;
+    @include display-flex();
+    @include flex-direction(column);
+    @include justify-content(center);
+    text-align: center;
+    color: white;
+}
+
+    #inner {
+        margin-left: 25%;
+        h2 {
+            display: inline-block;
+            font-size: 1.75em;
+            opacity: 1;
+            padding: 0.35em 1em;
+            position: relative;
+            z-index: 1;
+            text-transform: none;
+	    @include transform(scale(1));
+            @include transition(transform scale 0.85s ease);
+
+            &:before, 
+            &:after {
+                @include transition(width 0.35s ease);
+                @include transition-delay(0);
+                content: '';
+                display: block;
+                height: 1px;
+                position: absolute;
+                width: 100%;
+                background-color: white;
+            }
+
+            &:before {
+                top: 0;
+                left: 0;
+            }
+
+            &:after {
+                bottom: 0;
+                right: 0;
+            }
+        }
+        p {
+            text-transform: uppercase;
+            letter-spacing: 0.225em;
+            @include transition(opacity 0.55s ease);
+            opacity: 1;
+        }
+    }
+
+    .more {
+        @include transition(transform 0.75s ease, opacity 0.75s ease);
+        @include transition-delay(0);
+        @include transform(translateY(0));
+
+        border: 0;
+        bottom: 0;
+        color: inherit;
+        font-size: 0.8em;
+        height: 8.5em;
+        left: 50%;
+        letter-spacing: 0.225em;
+        margin-left: -8.5em;
+        opacity: 1;
+        outline: 0;
+        padding-left: 0.225em;
+        position: absolute;
+        text-align: center;
+        text-transform: uppercase;
+        width: 16em;
+        z-index: 1;
+    }
+
+    .more:after {
+        background-image: url("images/arrow.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: 4em;
+        content: '';
+        display: block;
+        height: 1.5em;
+        left: 50%;
+        margin: 0 0 0 -0.75em;
+        position: absolute;
+        width: 1.5em;
+    }
+
+.container {
+    @include background-image(url(/images/goldbackground.jpg));
+    @include container(show overlay);
+    min-height: 1000px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    border-top: 1px #CEDFEA solid;
+}
+
+.paper {
+    border-left: solid 1px #cedfea;
+    border-right: solid 1px #cedfea;
+    background-color: rgba(250, 250, 255, 0.8);
+}
+
+.module {
+    padding: 25px;
+    h2 {
+        color: gray;
+    }
+    margin-top: 25px;
+    clear: both;
+}
+
+.gallery img {
+  @include gallery(3 of 12);
+}

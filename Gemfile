@@ -6,5 +6,6 @@ versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
 gem 'github-pages', versions['github-pages']
 gem 'rouge'
-gem 'thor'
 gem 'stringex'
+gem 'jekyll-compass'
+gem 'susy'
