@@ -305,3 +305,296 @@ head:hover ~ .container:before, head:hover ~ body .container:before {
   margin-right: -100%;
   clear: none;
 }
+
+/*************************************
+Build the scene and rotate on hover
+**************************************/
+/* line 195, ../_sass/style.scss */
+.stage {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 200, ../_sass/style.scss */
+.scene {
+  width: 520px;
+  height: 300px;
+  margin: 30px;
+  float: left;
+  -moz-perspective: 2000px;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+}
+
+/* line 208, ../_sass/style.scss */
+.movie {
+  width: 520px;
+  height: 300px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-260px);
+  -moz-transform: translateZ(-260px);
+  transform: translateZ(-260px);
+  -webkit-transition: -webkit-transform 350ms;
+  -moz-transition: -moz-transform 350ms;
+  transition: transform 350ms;
+}
+
+/* line 222, ../_sass/style.scss */
+.movie:hover {
+  -webkit-transform: rotateY(-78deg) translateZ(20px);
+  -moz-transform: rotateY(-78deg) translateZ(20px);
+  transform: rotateY(-78deg) translateZ(20px);
+}
+
+/*************************************
+Transform and style the two planes
+**************************************/
+/* line 232, ../_sass/style.scss */
+.movie .poster,
+.movie .info {
+  position: absolute;
+  width: 520px;
+  height: 300px;
+  background-color: #fff;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 243, ../_sass/style.scss */
+.movie .poster {
+  -webkit-transform: translateZ(260px);
+  -moz-transform: translateZ(260px);
+  transform: translateZ(260px);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 251, ../_sass/style.scss */
+.movie .info {
+  -webkit-transform: rotateY(90deg) translateZ(260px);
+  -moz-transform: rotateY(90deg) translateZ(260px);
+  transform: rotateY(90deg) translateZ(260px);
+  border: 1px solid #B8B5B5;
+  font-size: 0.75em;
+}
+
+/*************************************
+Shadow beneath the 3D object
+**************************************/
+/* line 263, ../_sass/style.scss */
+.csstransforms3d .movie::after {
+  content: '';
+  width: 520px;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transform: rotateX(90deg) translateY(260px);
+  -moz-transform: rotateX(90deg) translateY(260px);
+  transform: rotateX(90deg) translateY(260px);
+  -webkit-transition: box-shadow 350ms;
+  -moz-transition: box-shadow 350ms;
+  transition: box-shadow 350ms;
+}
+
+/* line 281, ../_sass/style.scss */
+.csstransforms3d .movie:hover::after {
+  box-shadow: 20px -5px 50px rgba(0, 0, 0, 0.3);
+}
+
+/*************************************
+Movie information
+**************************************/
+/* line 289, ../_sass/style.scss */
+.info header {
+  padding: 7px 10px;
+  font-weight: bold;
+  height: 195px;
+  font-size: 34px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.info header:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 297, ../_sass/style.scss */
+.info header h1 {
+  margin: 0 0 2px;
+  font-size: 1.4em;
+}
+
+/* line 302, ../_sass/style.scss */
+.info p {
+  padding: 1.2em 1.4em;
+  margin: 2px 0 0;
+  font-weight: 700;
+  color: #666;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+/* line 312, ../_sass/style.scss */
+.details {
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 316, ../_sass/style.scss */
+.checkout {
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/*************************************
+Generate "lighting" using box shadows
+**************************************/
+/* line 324, ../_sass/style.scss */
+.movie .poster,
+.movie .info,
+.movie .info header {
+  -webkit-transition: box-shadow 350ms;
+  -moz-transition: box-shadow 350ms;
+  transition: box-shadow 350ms;
+}
+
+/* line 332, ../_sass/style.scss */
+.csstransforms3d .movie .poster {
+  box-shadow: inset 0px 0px 40px rgba(255, 255, 255, 0);
+}
+
+/* line 336, ../_sass/style.scss */
+.csstransforms3d .movie:hover .poster {
+  box-shadow: inset 300px 0px 40px rgba(255, 255, 255, 0.8);
+}
+
+/* line 340, ../_sass/style.scss */
+.csstransforms3d .movie .info,
+.csstransforms3d .movie .info header {
+  box-shadow: inset -300px 0px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* line 345, ../_sass/style.scss */
+.csstransforms3d .movie:hover .info,
+.csstransforms3d .movie:hover .info header {
+  box-shadow: inset 0px 0px 40px transparent;
+}
+
+/*************************************
+Posters and still images
+**************************************/
+/* line 354, ../_sass/style.scss */
+.scene:nth-child(1) .movie .poster {
+  background-image: url(http://www.anywherenrado.com/wp-content/uploads/2015/09/Migration.jpg);
+}
+
+/* line 358, ../_sass/style.scss */
+.scene:nth-child(2) .poster {
+  background-image: url(https://cdn.kiwicollection.com/media/property/PR003362/xl/003362-03-dsc0967.jpg);
+}
+
+/* line 362, ../_sass/style.scss */
+.scene:nth-child(3) .poster {
+  background-image: url(http://www.wmagazine.com/wp-content/uploads/2012/11/blog-Micato-Safaris-vehicle-and-lion.jpg);
+}
+
+/* line 366, ../_sass/style.scss */
+.scene:nth-child(4) .poster {
+  background-image: url(http://o.aolcdn.com/hss/storage/adam/5103f3bb4a83631d50b07d486e3f15c0/dv2074040.jpg);
+}
+
+/* line 376, ../_sass/style.scss */
+.scene:nth-child(2) .info header {
+  background-image: url();
+}
+
+/* line 380, ../_sass/style.scss */
+.scene:nth-child(3) .info header {
+  background-image: url();
+}
+
+/** Button */
+/* line 399, ../_sass/style.scss */
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+/* line 407, ../_sass/style.scss */
+.btn-green {
+  background: #2ecc71;
+}
+/* line 390, ../_sass/style.scss */
+.btn-green:hover {
+  background: #26ab5f;
+  transition: all 0.3s ease;
+}
+/* line 394, ../_sass/style.scss */
+.btn-green:active {
+  background: #176437;
+}
+
+/* line 411, ../_sass/style.scss */
+.btn-blue {
+  background: #3498db;
+}
+/* line 390, ../_sass/style.scss */
+.btn-blue:hover {
+  background: #2383c4;
+  transition: all 0.3s ease;
+}
+/* line 394, ../_sass/style.scss */
+.btn-blue:active {
+  background: #16527a;
+}
+
+/* line 415, ../_sass/style.scss */
+.btn-yellow {
+  background: #f1c40f;
+}
+/* line 390, ../_sass/style.scss */
+.btn-yellow:hover {
+  background: #cba50c;
+  transition: all 0.3s ease;
+}
+/* line 394, ../_sass/style.scss */
+.btn-yellow:active {
+  background: #796307;
+}
+
+/* line 419, ../_sass/style.scss */
+.btn-red {
+  background: #e74c3c;
+}
+/* line 390, ../_sass/style.scss */
+.btn-red:hover {
+  background: #df2e1b;
+  transition: all 0.3s ease;
+}
+/* line 394, ../_sass/style.scss */
+.btn-red:active {
+  background: #921e12;
+}
+
+/*Other Stylez*/
+/* line 424, ../_sass/style.scss */
+.wrap {
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+}
