@@ -208,58 +208,10 @@ h2 {
   display: block;
   clear: both;
 }
-/* line 65, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/language/susy/_background.scss */
-head {
-  display: block;
-  position: fixed;
-  right: 10px;
-  top: 10px;
-  z-index: 999;
-  color: #333;
-  background: rgba(255, 255, 255, 0.25);
-}
-/* line 66, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/language/susy/_background.scss */
-head:before {
-  content: "|||";
-  display: block;
-  padding: 5px 10px;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-}
-/* line 67, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/language/susy/_background.scss */
-head:hover {
-  background: rgba(255, 255, 255, 0.5);
-  color: red;
-}
-/* line 71, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/language/susy/_background.scss */
-head:hover ~ .container, head:hover ~ body .container {
-  position: relative;
-}
-/* line 74, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/language/susy/_background.scss */
-head:hover ~ .container:before, head:hover ~ body .container:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  content: " ";
-  z-index: 998;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(80%, rgba(179, 179, 255, 0.25)), color-stop(80%, rgba(0, 0, 0, 0)));
-  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
-  background-size: 8.47458%;
-  background-origin: content-box;
-  background-clip: content-box;
-  background-position: left top;
-}
 
 /* line 168, ../_sass/style.scss */
-.paper {
-  border-left: solid 1px #cedfea;
+.module {
+  border-left: solid 10px #cedfea;
   border-right: solid 1px #cedfea;
   background-color: rgba(250, 250, 255, 0.8);
 }
@@ -276,6 +228,33 @@ head:hover ~ .container:before, head:hover ~ body .container:before {
 }
 
 /* line 183, ../_sass/style.scss */
+.module {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.module:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 186, ../_sass/style.scss */
+.module .header {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 191, ../_sass/style.scss */
+.module .desc {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 196, ../_sass/style.scss */
 .gallery img {
   width: 23.72881%;
   float: left;
@@ -309,13 +288,13 @@ head:hover ~ .container:before, head:hover ~ body .container:before {
 /*************************************
 Build the scene and rotate on hover
 **************************************/
-/* line 195, ../_sass/style.scss */
+/* line 208, ../_sass/style.scss */
 .stage {
   list-style: none;
   padding: 0;
 }
 
-/* line 200, ../_sass/style.scss */
+/* line 213, ../_sass/style.scss */
 .scene {
   width: 520px;
   height: 300px;
@@ -326,7 +305,7 @@ Build the scene and rotate on hover
   perspective: 2000px;
 }
 
-/* line 208, ../_sass/style.scss */
+/* line 221, ../_sass/style.scss */
 .movie {
   width: 520px;
   height: 300px;
@@ -341,7 +320,7 @@ Build the scene and rotate on hover
   transition: transform 350ms;
 }
 
-/* line 222, ../_sass/style.scss */
+/* line 235, ../_sass/style.scss */
 .movie:hover {
   -webkit-transform: rotateY(-78deg) translateZ(20px);
   -moz-transform: rotateY(-78deg) translateZ(20px);
@@ -351,7 +330,7 @@ Build the scene and rotate on hover
 /*************************************
 Transform and style the two planes
 **************************************/
-/* line 232, ../_sass/style.scss */
+/* line 245, ../_sass/style.scss */
 .movie .poster,
 .movie .info {
   position: absolute;
@@ -363,7 +342,7 @@ Transform and style the two planes
   backface-visibility: hidden;
 }
 
-/* line 243, ../_sass/style.scss */
+/* line 256, ../_sass/style.scss */
 .movie .poster {
   -webkit-transform: translateZ(260px);
   -moz-transform: translateZ(260px);
@@ -372,7 +351,7 @@ Transform and style the two planes
   background-repeat: no-repeat;
 }
 
-/* line 251, ../_sass/style.scss */
+/* line 264, ../_sass/style.scss */
 .movie .info {
   -webkit-transform: rotateY(90deg) translateZ(260px);
   -moz-transform: rotateY(90deg) translateZ(260px);
@@ -384,7 +363,7 @@ Transform and style the two planes
 /*************************************
 Shadow beneath the 3D object
 **************************************/
-/* line 263, ../_sass/style.scss */
+/* line 276, ../_sass/style.scss */
 .csstransforms3d .movie::after {
   content: '';
   width: 520px;
@@ -403,7 +382,7 @@ Shadow beneath the 3D object
   transition: box-shadow 350ms;
 }
 
-/* line 281, ../_sass/style.scss */
+/* line 294, ../_sass/style.scss */
 .csstransforms3d .movie:hover::after {
   box-shadow: 20px -5px 50px rgba(0, 0, 0, 0.3);
 }
@@ -411,7 +390,7 @@ Shadow beneath the 3D object
 /*************************************
 Movie information
 **************************************/
-/* line 289, ../_sass/style.scss */
+/* line 302, ../_sass/style.scss */
 .info header {
   padding: 7px 10px;
   font-weight: bold;
@@ -428,13 +407,13 @@ Movie information
   clear: both;
 }
 
-/* line 297, ../_sass/style.scss */
+/* line 310, ../_sass/style.scss */
 .info header h1 {
   margin: 0 0 2px;
   font-size: 1.4em;
 }
 
-/* line 302, ../_sass/style.scss */
+/* line 315, ../_sass/style.scss */
 .info p {
   padding: 1.2em 1.4em;
   margin: 2px 0 0;
@@ -444,14 +423,14 @@ Movie information
   font-size: 16px;
 }
 
-/* line 312, ../_sass/style.scss */
+/* line 325, ../_sass/style.scss */
 .details {
   width: 40.67797%;
   float: left;
   margin-right: 1.69492%;
 }
 
-/* line 316, ../_sass/style.scss */
+/* line 329, ../_sass/style.scss */
 .checkout {
   width: 40.67797%;
   float: left;
@@ -461,7 +440,7 @@ Movie information
 /*************************************
 Generate "lighting" using box shadows
 **************************************/
-/* line 324, ../_sass/style.scss */
+/* line 337, ../_sass/style.scss */
 .movie .poster,
 .movie .info,
 .movie .info header {
@@ -470,23 +449,23 @@ Generate "lighting" using box shadows
   transition: box-shadow 350ms;
 }
 
-/* line 332, ../_sass/style.scss */
+/* line 345, ../_sass/style.scss */
 .csstransforms3d .movie .poster {
   box-shadow: inset 0px 0px 40px rgba(255, 255, 255, 0);
 }
 
-/* line 336, ../_sass/style.scss */
+/* line 349, ../_sass/style.scss */
 .csstransforms3d .movie:hover .poster {
   box-shadow: inset 300px 0px 40px rgba(255, 255, 255, 0.8);
 }
 
-/* line 340, ../_sass/style.scss */
+/* line 353, ../_sass/style.scss */
 .csstransforms3d .movie .info,
 .csstransforms3d .movie .info header {
   box-shadow: inset -300px 0px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* line 345, ../_sass/style.scss */
+/* line 358, ../_sass/style.scss */
 .csstransforms3d .movie:hover .info,
 .csstransforms3d .movie:hover .info header {
   box-shadow: inset 0px 0px 40px transparent;
@@ -495,38 +474,38 @@ Generate "lighting" using box shadows
 /*************************************
 Posters and still images
 **************************************/
-/* line 354, ../_sass/style.scss */
+/* line 367, ../_sass/style.scss */
 .scene:nth-child(1) .movie .poster {
   background-image: url(http://www.anywherenrado.com/wp-content/uploads/2015/09/Migration.jpg);
 }
 
-/* line 358, ../_sass/style.scss */
+/* line 371, ../_sass/style.scss */
 .scene:nth-child(2) .poster {
   background-image: url(https://cdn.kiwicollection.com/media/property/PR003362/xl/003362-03-dsc0967.jpg);
 }
 
-/* line 362, ../_sass/style.scss */
+/* line 375, ../_sass/style.scss */
 .scene:nth-child(3) .poster {
   background-image: url(http://www.wmagazine.com/wp-content/uploads/2012/11/blog-Micato-Safaris-vehicle-and-lion.jpg);
 }
 
-/* line 366, ../_sass/style.scss */
+/* line 379, ../_sass/style.scss */
 .scene:nth-child(4) .poster {
   background-image: url(http://o.aolcdn.com/hss/storage/adam/5103f3bb4a83631d50b07d486e3f15c0/dv2074040.jpg);
 }
 
-/* line 376, ../_sass/style.scss */
+/* line 389, ../_sass/style.scss */
 .scene:nth-child(2) .info header {
   background-image: url();
 }
 
-/* line 380, ../_sass/style.scss */
+/* line 393, ../_sass/style.scss */
 .scene:nth-child(3) .info header {
   background-image: url();
 }
 
 /** Button */
-/* line 399, ../_sass/style.scss */
+/* line 412, ../_sass/style.scss */
 .btn {
   color: white;
   text-decoration: none;
@@ -535,64 +514,78 @@ Posters and still images
   font-size: 14px;
 }
 
-/* line 407, ../_sass/style.scss */
+/* line 420, ../_sass/style.scss */
 .btn-green {
   background: #2ecc71;
 }
-/* line 390, ../_sass/style.scss */
+/* line 403, ../_sass/style.scss */
 .btn-green:hover {
   background: #26ab5f;
   transition: all 0.3s ease;
 }
-/* line 394, ../_sass/style.scss */
+/* line 407, ../_sass/style.scss */
 .btn-green:active {
   background: #176437;
 }
 
-/* line 411, ../_sass/style.scss */
+/* line 424, ../_sass/style.scss */
 .btn-blue {
   background: #3498db;
 }
-/* line 390, ../_sass/style.scss */
+/* line 403, ../_sass/style.scss */
 .btn-blue:hover {
   background: #2383c4;
   transition: all 0.3s ease;
 }
-/* line 394, ../_sass/style.scss */
+/* line 407, ../_sass/style.scss */
 .btn-blue:active {
   background: #16527a;
 }
 
-/* line 415, ../_sass/style.scss */
+/* line 428, ../_sass/style.scss */
+.btn-aqua {
+  background: #40bbc8;
+}
+/* line 403, ../_sass/style.scss */
+.btn-aqua:hover {
+  background: #32a2ad;
+  transition: all 0.3s ease;
+}
+/* line 407, ../_sass/style.scss */
+.btn-aqua:active {
+  background: #1f636a;
+}
+
+/* line 432, ../_sass/style.scss */
 .btn-yellow {
   background: #f1c40f;
 }
-/* line 390, ../_sass/style.scss */
+/* line 403, ../_sass/style.scss */
 .btn-yellow:hover {
   background: #cba50c;
   transition: all 0.3s ease;
 }
-/* line 394, ../_sass/style.scss */
+/* line 407, ../_sass/style.scss */
 .btn-yellow:active {
   background: #796307;
 }
 
-/* line 419, ../_sass/style.scss */
+/* line 436, ../_sass/style.scss */
 .btn-red {
   background: #e74c3c;
 }
-/* line 390, ../_sass/style.scss */
+/* line 403, ../_sass/style.scss */
 .btn-red:hover {
   background: #df2e1b;
   transition: all 0.3s ease;
 }
-/* line 394, ../_sass/style.scss */
+/* line 407, ../_sass/style.scss */
 .btn-red:active {
   background: #921e12;
 }
 
 /*Other Stylez*/
-/* line 424, ../_sass/style.scss */
+/* line 441, ../_sass/style.scss */
 .wrap {
   margin: 0 auto;
   width: 800px;

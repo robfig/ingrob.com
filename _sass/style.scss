@@ -157,7 +157,7 @@ h2 {
 
 .container {
     @include background-image(url(/images/goldbackground.jpg));
-    @include container(show overlay);
+    @include container();
     min-height: 1000px;
     padding-left: 50px;
     padding-right: 50px;
@@ -165,8 +165,8 @@ h2 {
     border-top: 1px #CEDFEA solid;
 }
 
-.paper {
-    border-left: solid 1px #cedfea;
+.module {
+    border-left: solid 10px #cedfea;
     border-right: solid 1px #cedfea;
     background-color: rgba(250, 250, 255, 0.8);
 }
@@ -178,6 +178,19 @@ h2 {
     }
     margin-top: 25px;
     clear: both;
+}
+
+.module {
+    @include container();
+
+    .header {
+        @include span(4);
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .desc {
+        @include span(6);
+    }
 }
 
 .gallery img {
@@ -410,6 +423,10 @@ Posters and still images
 
 .btn-blue {
    @include button-bg(#3498db);
+}
+
+.btn-aqua {
+   @include button-bg(#40bbc8);
 }
 
 .btn-yellow{
