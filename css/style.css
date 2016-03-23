@@ -7,14 +7,14 @@
   box-sizing: border-box;
 }
 
-/* line 15, ../_sass/style.scss */
+/* line 19, ../_sass/style.scss */
 body {
   padding: 0;
   margin: 0;
   font-family: 'Marcellus', serif;
 }
 
-/* line 24, ../_sass/style.scss */
+/* line 28, ../_sass/style.scss */
 body.is-loading #banner #inner h2 {
   -moz-transform: scale(0.95);
   -ms-transform: scale(0.95);
@@ -22,16 +22,16 @@ body.is-loading #banner #inner h2 {
   transform: scale(0.95);
   opacity: 0;
 }
-/* line 27, ../_sass/style.scss */
+/* line 31, ../_sass/style.scss */
 body.is-loading #banner #inner h2:before, body.is-loading #banner #inner h2:after {
   width: 0;
   opacity: 0;
 }
-/* line 33, ../_sass/style.scss */
+/* line 37, ../_sass/style.scss */
 body.is-loading #banner #inner p {
   opacity: 0;
 }
-/* line 38, ../_sass/style.scss */
+/* line 42, ../_sass/style.scss */
 body.is-loading #banner .more {
   -moz-transform: translateY(8.5em);
   -ms-transform: translateY(8.5em);
@@ -40,12 +40,12 @@ body.is-loading #banner .more {
   opacity: 0;
 }
 
-/* line 45, ../_sass/style.scss */
+/* line 49, ../_sass/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 49, ../_sass/style.scss */
+/* line 53, ../_sass/style.scss */
 h2 {
   color: #fff;
   font-weight: 800;
@@ -56,7 +56,7 @@ h2 {
   font-size: 1.35em;
 }
 
-/* line 59, ../_sass/style.scss */
+/* line 63, ../_sass/style.scss */
 #banner {
   font-family: 'Open Sans', Helvetica, sans-serif;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjMiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4zIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url("/images/banner.jpg");
@@ -82,11 +82,11 @@ h2 {
   color: white;
 }
 
-/* line 77, ../_sass/style.scss */
+/* line 81, ../_sass/style.scss */
 #inner {
   margin-left: 25%;
 }
-/* line 79, ../_sass/style.scss */
+/* line 83, ../_sass/style.scss */
 #inner h2 {
   display: inline-block;
   font-size: 1.75em;
@@ -104,7 +104,7 @@ h2 {
   -webkit-transition: -webkit-transform 0.85s ease;
   transition: transform 0.85s ease;
 }
-/* line 90, ../_sass/style.scss */
+/* line 94, ../_sass/style.scss */
 #inner h2:before, #inner h2:after {
   -moz-transition: width 0.35s ease;
   -o-transition: width 0.35s ease;
@@ -121,17 +121,17 @@ h2 {
   width: 100%;
   background-color: white;
 }
-/* line 102, ../_sass/style.scss */
+/* line 106, ../_sass/style.scss */
 #inner h2:before {
   top: 0;
   left: 0;
 }
-/* line 107, ../_sass/style.scss */
+/* line 111, ../_sass/style.scss */
 #inner h2:after {
   bottom: 0;
   right: 0;
 }
-/* line 112, ../_sass/style.scss */
+/* line 116, ../_sass/style.scss */
 #inner p {
   text-transform: uppercase;
   letter-spacing: 0.225em;
@@ -142,7 +142,7 @@ h2 {
   opacity: 1;
 }
 
-/* line 120, ../_sass/style.scss */
+/* line 124, ../_sass/style.scss */
 .more {
   -moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
   -o-transition: -o-transform 0.75s ease, opacity 0.75s ease;
@@ -174,7 +174,7 @@ h2 {
   z-index: 1;
 }
 
-/* line 143, ../_sass/style.scss */
+/* line 147, ../_sass/style.scss */
 .more:after {
   background-image: url("images/arrow.svg");
   background-position: center;
@@ -190,7 +190,7 @@ h2 {
   width: 1.5em;
 }
 
-/* line 158, ../_sass/style.scss */
+/* line 162, ../_sass/style.scss */
 .container {
   background-image: url(/images/goldbackground.jpg);
   max-width: 100%;
@@ -209,25 +209,26 @@ h2 {
   clear: both;
 }
 
-/* line 168, ../_sass/style.scss */
+/* line 172, ../_sass/style.scss */
 .module {
   border-left: solid 10px #cedfea;
   border-right: solid 1px #cedfea;
   background-color: rgba(250, 250, 255, 0.8);
 }
 
-/* line 174, ../_sass/style.scss */
+/* line 178, ../_sass/style.scss */
 .module {
-  padding: 25px;
+  padding: 1.69492%;
   margin-top: 25px;
-  clear: both;
+  overflow: hidden;
+  *zoom: 1;
 }
-/* line 176, ../_sass/style.scss */
+/* line 180, ../_sass/style.scss */
 .module h2 {
   color: gray;
 }
 
-/* line 183, ../_sass/style.scss */
+/* line 187, ../_sass/style.scss */
 .module {
   max-width: 100%;
   margin-left: auto;
@@ -239,7 +240,7 @@ h2 {
   display: block;
   clear: both;
 }
-/* line 186, ../_sass/style.scss */
+/* line 190, ../_sass/style.scss */
 .module .header {
   width: 32.20339%;
   float: left;
@@ -247,54 +248,83 @@ h2 {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 191, ../_sass/style.scss */
+/* line 195, ../_sass/style.scss */
 .module .desc {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%;
 }
-
-/* line 196, ../_sass/style.scss */
-.gallery img {
-  width: 23.72881%;
+/* line 199, ../_sass/style.scss */
+.module .event {
+  overflow: hidden;
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  /* @include susy-breakpoint($bp-large, $susy) { */
+  /*     @include span(4 of 12); */
+  /* } */
+  /* @include gallery(6 of 12); */
+}
+@media (min-width: 32em) {
+  /* line 199, ../_sass/style.scss */
+  .module .event {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+/* line 209, ../_sass/style.scss */
+.module .event img {
+  max-width: 100%;
+  min-width: 200px;
+}
+/* line 213, ../_sass/style.scss */
+.module .event:last-child {
+  float: right;
+  margin-right: 0;
+}
+/* line 218, ../_sass/style.scss */
+.module .hotel {
+  width: 50%;
+  float: left;
+  margin-right: 1.69492%;
+  width: 32.20339%;
   float: left;
 }
 /* line 66, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
-.gallery img:nth-child(4n + 1) {
+.module .hotel:nth-child(3n + 1) {
   margin-left: 0;
   margin-right: -100%;
   clear: both;
   margin-left: 0;
 }
 /* line 66, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
-.gallery img:nth-child(4n + 2) {
-  margin-left: 25.42373%;
+.module .hotel:nth-child(3n + 2) {
+  margin-left: 33.89831%;
   margin-right: -100%;
   clear: none;
 }
 /* line 66, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
-.gallery img:nth-child(4n + 3) {
-  margin-left: 50.84746%;
+.module .hotel:nth-child(3n + 3) {
+  margin-left: 67.79661%;
   margin-right: -100%;
   clear: none;
 }
-/* line 66, ../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
-.gallery img:nth-child(4n + 4) {
-  margin-left: 76.27119%;
-  margin-right: -100%;
-  clear: none;
+/* line 221, ../_sass/style.scss */
+.module .hotel img {
+  max-width: 100%;
 }
 
 /*************************************
 Build the scene and rotate on hover
 **************************************/
-/* line 208, ../_sass/style.scss */
+/* line 234, ../_sass/style.scss */
 .stage {
   list-style: none;
   padding: 0;
 }
 
-/* line 213, ../_sass/style.scss */
+/* line 239, ../_sass/style.scss */
 .scene {
   width: 520px;
   height: 300px;
@@ -305,7 +335,7 @@ Build the scene and rotate on hover
   perspective: 2000px;
 }
 
-/* line 221, ../_sass/style.scss */
+/* line 247, ../_sass/style.scss */
 .movie {
   width: 520px;
   height: 300px;
@@ -320,7 +350,7 @@ Build the scene and rotate on hover
   transition: transform 350ms;
 }
 
-/* line 235, ../_sass/style.scss */
+/* line 261, ../_sass/style.scss */
 .movie:hover {
   -webkit-transform: rotateY(-78deg) translateZ(20px);
   -moz-transform: rotateY(-78deg) translateZ(20px);
@@ -330,7 +360,7 @@ Build the scene and rotate on hover
 /*************************************
 Transform and style the two planes
 **************************************/
-/* line 245, ../_sass/style.scss */
+/* line 271, ../_sass/style.scss */
 .movie .poster,
 .movie .info {
   position: absolute;
@@ -342,7 +372,7 @@ Transform and style the two planes
   backface-visibility: hidden;
 }
 
-/* line 256, ../_sass/style.scss */
+/* line 282, ../_sass/style.scss */
 .movie .poster {
   -webkit-transform: translateZ(260px);
   -moz-transform: translateZ(260px);
@@ -351,7 +381,7 @@ Transform and style the two planes
   background-repeat: no-repeat;
 }
 
-/* line 264, ../_sass/style.scss */
+/* line 290, ../_sass/style.scss */
 .movie .info {
   -webkit-transform: rotateY(90deg) translateZ(260px);
   -moz-transform: rotateY(90deg) translateZ(260px);
@@ -363,7 +393,7 @@ Transform and style the two planes
 /*************************************
 Shadow beneath the 3D object
 **************************************/
-/* line 276, ../_sass/style.scss */
+/* line 302, ../_sass/style.scss */
 .csstransforms3d .movie::after {
   content: '';
   width: 520px;
@@ -382,7 +412,7 @@ Shadow beneath the 3D object
   transition: box-shadow 350ms;
 }
 
-/* line 294, ../_sass/style.scss */
+/* line 320, ../_sass/style.scss */
 .csstransforms3d .movie:hover::after {
   box-shadow: 20px -5px 50px rgba(0, 0, 0, 0.3);
 }
@@ -390,7 +420,7 @@ Shadow beneath the 3D object
 /*************************************
 Movie information
 **************************************/
-/* line 302, ../_sass/style.scss */
+/* line 328, ../_sass/style.scss */
 .info header {
   padding: 7px 10px;
   font-weight: bold;
@@ -407,13 +437,13 @@ Movie information
   clear: both;
 }
 
-/* line 310, ../_sass/style.scss */
+/* line 336, ../_sass/style.scss */
 .info header h1 {
   margin: 0 0 2px;
   font-size: 1.4em;
 }
 
-/* line 315, ../_sass/style.scss */
+/* line 341, ../_sass/style.scss */
 .info p {
   padding: 1.2em 1.4em;
   margin: 2px 0 0;
@@ -423,14 +453,14 @@ Movie information
   font-size: 16px;
 }
 
-/* line 325, ../_sass/style.scss */
+/* line 351, ../_sass/style.scss */
 .details {
   width: 40.67797%;
   float: left;
   margin-right: 1.69492%;
 }
 
-/* line 329, ../_sass/style.scss */
+/* line 355, ../_sass/style.scss */
 .checkout {
   width: 40.67797%;
   float: left;
@@ -440,7 +470,7 @@ Movie information
 /*************************************
 Generate "lighting" using box shadows
 **************************************/
-/* line 337, ../_sass/style.scss */
+/* line 363, ../_sass/style.scss */
 .movie .poster,
 .movie .info,
 .movie .info header {
@@ -449,23 +479,23 @@ Generate "lighting" using box shadows
   transition: box-shadow 350ms;
 }
 
-/* line 345, ../_sass/style.scss */
+/* line 371, ../_sass/style.scss */
 .csstransforms3d .movie .poster {
   box-shadow: inset 0px 0px 40px rgba(255, 255, 255, 0);
 }
 
-/* line 349, ../_sass/style.scss */
+/* line 375, ../_sass/style.scss */
 .csstransforms3d .movie:hover .poster {
   box-shadow: inset 300px 0px 40px rgba(255, 255, 255, 0.8);
 }
 
-/* line 353, ../_sass/style.scss */
+/* line 379, ../_sass/style.scss */
 .csstransforms3d .movie .info,
 .csstransforms3d .movie .info header {
   box-shadow: inset -300px 0px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* line 358, ../_sass/style.scss */
+/* line 384, ../_sass/style.scss */
 .csstransforms3d .movie:hover .info,
 .csstransforms3d .movie:hover .info header {
   box-shadow: inset 0px 0px 40px transparent;
@@ -474,38 +504,38 @@ Generate "lighting" using box shadows
 /*************************************
 Posters and still images
 **************************************/
-/* line 367, ../_sass/style.scss */
+/* line 393, ../_sass/style.scss */
 .scene:nth-child(1) .movie .poster {
   background-image: url(http://www.anywherenrado.com/wp-content/uploads/2015/09/Migration.jpg);
 }
 
-/* line 371, ../_sass/style.scss */
+/* line 397, ../_sass/style.scss */
 .scene:nth-child(2) .poster {
   background-image: url(https://cdn.kiwicollection.com/media/property/PR003362/xl/003362-03-dsc0967.jpg);
 }
 
-/* line 375, ../_sass/style.scss */
+/* line 401, ../_sass/style.scss */
 .scene:nth-child(3) .poster {
   background-image: url(http://www.wmagazine.com/wp-content/uploads/2012/11/blog-Micato-Safaris-vehicle-and-lion.jpg);
 }
 
-/* line 379, ../_sass/style.scss */
+/* line 405, ../_sass/style.scss */
 .scene:nth-child(4) .poster {
   background-image: url(http://o.aolcdn.com/hss/storage/adam/5103f3bb4a83631d50b07d486e3f15c0/dv2074040.jpg);
 }
 
-/* line 389, ../_sass/style.scss */
+/* line 415, ../_sass/style.scss */
 .scene:nth-child(2) .info header {
   background-image: url();
 }
 
-/* line 393, ../_sass/style.scss */
+/* line 419, ../_sass/style.scss */
 .scene:nth-child(3) .info header {
   background-image: url();
 }
 
 /** Button */
-/* line 412, ../_sass/style.scss */
+/* line 438, ../_sass/style.scss */
 .btn {
   color: white;
   text-decoration: none;
@@ -514,78 +544,78 @@ Posters and still images
   font-size: 14px;
 }
 
-/* line 420, ../_sass/style.scss */
+/* line 446, ../_sass/style.scss */
 .btn-green {
   background: #2ecc71;
 }
-/* line 403, ../_sass/style.scss */
+/* line 429, ../_sass/style.scss */
 .btn-green:hover {
   background: #26ab5f;
   transition: all 0.3s ease;
 }
-/* line 407, ../_sass/style.scss */
+/* line 433, ../_sass/style.scss */
 .btn-green:active {
   background: #176437;
 }
 
-/* line 424, ../_sass/style.scss */
+/* line 450, ../_sass/style.scss */
 .btn-blue {
   background: #3498db;
 }
-/* line 403, ../_sass/style.scss */
+/* line 429, ../_sass/style.scss */
 .btn-blue:hover {
   background: #2383c4;
   transition: all 0.3s ease;
 }
-/* line 407, ../_sass/style.scss */
+/* line 433, ../_sass/style.scss */
 .btn-blue:active {
   background: #16527a;
 }
 
-/* line 428, ../_sass/style.scss */
+/* line 454, ../_sass/style.scss */
 .btn-aqua {
   background: #40bbc8;
 }
-/* line 403, ../_sass/style.scss */
+/* line 429, ../_sass/style.scss */
 .btn-aqua:hover {
   background: #32a2ad;
   transition: all 0.3s ease;
 }
-/* line 407, ../_sass/style.scss */
+/* line 433, ../_sass/style.scss */
 .btn-aqua:active {
   background: #1f636a;
 }
 
-/* line 432, ../_sass/style.scss */
+/* line 458, ../_sass/style.scss */
 .btn-yellow {
   background: #f1c40f;
 }
-/* line 403, ../_sass/style.scss */
+/* line 429, ../_sass/style.scss */
 .btn-yellow:hover {
   background: #cba50c;
   transition: all 0.3s ease;
 }
-/* line 407, ../_sass/style.scss */
+/* line 433, ../_sass/style.scss */
 .btn-yellow:active {
   background: #796307;
 }
 
-/* line 436, ../_sass/style.scss */
+/* line 462, ../_sass/style.scss */
 .btn-red {
   background: #e74c3c;
 }
-/* line 403, ../_sass/style.scss */
+/* line 429, ../_sass/style.scss */
 .btn-red:hover {
   background: #df2e1b;
   transition: all 0.3s ease;
 }
-/* line 407, ../_sass/style.scss */
+/* line 433, ../_sass/style.scss */
 .btn-red:active {
   background: #921e12;
 }
 
 /*Other Stylez*/
-/* line 441, ../_sass/style.scss */
+/* line 467, ../_sass/style.scss */
 .wrap {
   margin: 0 auto;
   width: 800px;

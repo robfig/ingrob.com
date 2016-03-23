@@ -6,11 +6,15 @@
 @import "compass/css3/transform";
 @import "compass/css3/flexbox";
 @import "compass/css3/transition";
+@import "compass/utilities/general/clearfix";
 
 @include border-box-sizing;
 
 @import 'font-awesome.min.css';
 @import url(https://fonts.googleapis.com/css?family=Marcellus);
+
+$bp-medium: 32em;
+$bp-large: 60em;
 
 body {
     padding: 0;
@@ -172,12 +176,12 @@ h2 {
 }
 
 .module {
-    padding: 25px;
+    padding: gutter();
     h2 {
         color: gray;
     }
     margin-top: 25px;
-    clear: both;
+    @include clearfix;
 }
 
 .module {
@@ -191,12 +195,34 @@ h2 {
     .desc {
         @include span(6);
     }
-}
 
-.gallery img {
-  @include gallery(3 of 12);
-}
+    .event {
+        overflow: hidden;
+        @include span(12 last);
+        @include susy-breakpoint($bp-medium, $susy) {
+            @include span(6 of 12);
+        }
+        /* @include susy-breakpoint($bp-large, $susy) { */
+        /*     @include span(4 of 12); */
+        /* } */
+        /* @include gallery(6 of 12); */
+        img { 
+            max-width: 100%;
+            min-width: 200px;
+        }
+        &:last-child {
+            @include last;
+        }
+    }
 
+    .hotel {
+        @include span(50%);
+        @include gallery(4 of 12);
+        img { 
+            max-width: 100%;
+        }
+    }
+}
 
 /*************************************
 Build the scene and rotate on hover
