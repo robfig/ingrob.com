@@ -215,16 +215,17 @@ a {
 /* line 180, ../_sass/style.scss */
 .module {
   padding: 1.69492%;
+  padding-top: 0;
   margin-top: 25px;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 182, ../_sass/style.scss */
+/* line 183, ../_sass/style.scss */
 .module h2 {
   color: gray;
 }
 
-/* line 189, ../_sass/style.scss */
+/* line 190, ../_sass/style.scss */
 .module {
   max-width: 100%;
   margin-left: auto;
@@ -236,7 +237,7 @@ a {
   display: block;
   clear: both;
 }
-/* line 192, ../_sass/style.scss */
+/* line 193, ../_sass/style.scss */
 .module .header {
   width: 32.20339%;
   float: left;
@@ -244,19 +245,19 @@ a {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 197, ../_sass/style.scss */
+/* line 198, ../_sass/style.scss */
 .module .desc {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%;
 }
-/* line 201, ../_sass/style.scss */
+/* line 202, ../_sass/style.scss */
 .module.events {
   width: 49.15254%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 207, ../_sass/style.scss */
+/* line 208, ../_sass/style.scss */
 .module .event {
   overflow: hidden;
   /* @include span(12 last); */
@@ -271,52 +272,52 @@ a {
   /*     @include last; */
   /* } */
 }
-/* line 217, ../_sass/style.scss */
+/* line 218, ../_sass/style.scss */
 .module .event img {
   max-width: 100%;
   min-width: 200px;
 }
-/* line 229, ../_sass/style.scss */
+/* line 230, ../_sass/style.scss */
 .module .hotel {
   /* @include gallery(5 of 10); */
 }
-/* line 231, ../_sass/style.scss */
+/* line 232, ../_sass/style.scss */
 .module .hotel img {
   max-width: 100%;
 }
-/* line 234, ../_sass/style.scss */
+/* line 235, ../_sass/style.scss */
 .module .hotel:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 242, ../_sass/style.scss */
+/* line 243, ../_sass/style.scss */
 .module .drink-img {
   width: 32.20339%;
   float: left;
   margin-right: 1.69492%;
   overflow: hidden;
 }
-/* line 246, ../_sass/style.scss */
+/* line 247, ../_sass/style.scss */
 .module .drink-desc {
   width: 57.62712%;
   float: left;
   margin-right: 1.69492%;
 }
-/* line 250, ../_sass/style.scss */
+/* line 251, ../_sass/style.scss */
 .module .food-img {
   width: 32.20339%;
   float: left;
   margin-right: 1.69492%;
   overflow: hidden;
 }
-/* line 254, ../_sass/style.scss */
+/* line 255, ../_sass/style.scss */
 .module .food-desc {
   width: 57.62712%;
   float: left;
   margin-right: 1.69492%;
 }
 
-/* line 259, ../_sass/style.scss */
+/* line 260, ../_sass/style.scss */
 .nola img {
   max-width: 300px;
 }
@@ -324,13 +325,13 @@ a {
 /*************************************
 Build the scene and rotate on hover
 **************************************/
-/* line 270, ../_sass/style.scss */
+/* line 271, ../_sass/style.scss */
 .stage {
   list-style: none;
   padding: 0;
 }
 
-/* line 275, ../_sass/style.scss */
+/* line 276, ../_sass/style.scss */
 .scene {
   width: 520px;
   height: 300px;
@@ -341,7 +342,7 @@ Build the scene and rotate on hover
   perspective: 2000px;
 }
 
-/* line 283, ../_sass/style.scss */
+/* line 284, ../_sass/style.scss */
 .movie {
   width: 520px;
   height: 300px;
@@ -356,7 +357,7 @@ Build the scene and rotate on hover
   transition: transform 350ms;
 }
 
-/* line 297, ../_sass/style.scss */
+/* line 298, ../_sass/style.scss */
 .movie:hover {
   -webkit-transform: rotateY(-78deg) translateZ(20px);
   -moz-transform: rotateY(-78deg) translateZ(20px);
@@ -366,7 +367,7 @@ Build the scene and rotate on hover
 /*************************************
 Transform and style the two planes
 **************************************/
-/* line 307, ../_sass/style.scss */
+/* line 308, ../_sass/style.scss */
 .movie .poster,
 .movie .info {
   position: absolute;
@@ -378,7 +379,7 @@ Transform and style the two planes
   backface-visibility: hidden;
 }
 
-/* line 318, ../_sass/style.scss */
+/* line 319, ../_sass/style.scss */
 .movie .poster {
   -webkit-transform: translateZ(260px);
   -moz-transform: translateZ(260px);
@@ -387,7 +388,7 @@ Transform and style the two planes
   background-repeat: no-repeat;
 }
 
-/* line 326, ../_sass/style.scss */
+/* line 327, ../_sass/style.scss */
 .movie .info {
   -webkit-transform: rotateY(90deg) translateZ(260px);
   -moz-transform: rotateY(90deg) translateZ(260px);
@@ -399,7 +400,7 @@ Transform and style the two planes
 /*************************************
 Shadow beneath the 3D object
 **************************************/
-/* line 338, ../_sass/style.scss */
+/* line 339, ../_sass/style.scss */
 .csstransforms3d .movie::after {
   content: '';
   width: 520px;
@@ -418,7 +419,7 @@ Shadow beneath the 3D object
   transition: box-shadow 350ms;
 }
 
-/* line 356, ../_sass/style.scss */
+/* line 357, ../_sass/style.scss */
 .csstransforms3d .movie:hover::after {
   box-shadow: 20px -5px 50px rgba(0, 0, 0, 0.3);
 }
@@ -426,7 +427,7 @@ Shadow beneath the 3D object
 /*************************************
 Movie information
 **************************************/
-/* line 364, ../_sass/style.scss */
+/* line 365, ../_sass/style.scss */
 .info header {
   padding: 7px 10px;
   font-weight: bold;
@@ -443,13 +444,13 @@ Movie information
   clear: both;
 }
 
-/* line 372, ../_sass/style.scss */
+/* line 373, ../_sass/style.scss */
 .info header h1 {
   margin: 0 0 2px;
   font-size: 1.4em;
 }
 
-/* line 377, ../_sass/style.scss */
+/* line 378, ../_sass/style.scss */
 .info p {
   padding: 1.2em 1.4em;
   margin: 2px 0 0;
@@ -459,14 +460,14 @@ Movie information
   font-size: 16px;
 }
 
-/* line 387, ../_sass/style.scss */
+/* line 388, ../_sass/style.scss */
 .details {
   width: 40.67797%;
   float: left;
   margin-right: 1.69492%;
 }
 
-/* line 391, ../_sass/style.scss */
+/* line 392, ../_sass/style.scss */
 .checkout {
   width: 40.67797%;
   float: left;
@@ -476,7 +477,7 @@ Movie information
 /*************************************
 Generate "lighting" using box shadows
 **************************************/
-/* line 399, ../_sass/style.scss */
+/* line 400, ../_sass/style.scss */
 .movie .poster,
 .movie .info,
 .movie .info header {
@@ -485,23 +486,23 @@ Generate "lighting" using box shadows
   transition: box-shadow 350ms;
 }
 
-/* line 407, ../_sass/style.scss */
+/* line 408, ../_sass/style.scss */
 .csstransforms3d .movie .poster {
   box-shadow: inset 0px 0px 40px rgba(255, 255, 255, 0);
 }
 
-/* line 411, ../_sass/style.scss */
+/* line 412, ../_sass/style.scss */
 .csstransforms3d .movie:hover .poster {
   box-shadow: inset 300px 0px 40px rgba(255, 255, 255, 0.8);
 }
 
-/* line 415, ../_sass/style.scss */
+/* line 416, ../_sass/style.scss */
 .csstransforms3d .movie .info,
 .csstransforms3d .movie .info header {
   box-shadow: inset -300px 0px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* line 420, ../_sass/style.scss */
+/* line 421, ../_sass/style.scss */
 .csstransforms3d .movie:hover .info,
 .csstransforms3d .movie:hover .info header {
   box-shadow: inset 0px 0px 40px transparent;
@@ -510,38 +511,38 @@ Generate "lighting" using box shadows
 /*************************************
 Posters and still images
 **************************************/
-/* line 429, ../_sass/style.scss */
+/* line 430, ../_sass/style.scss */
 .scene:nth-child(1) .movie .poster {
   background-image: url(http://www.anywherenrado.com/wp-content/uploads/2015/09/Migration.jpg);
 }
 
-/* line 433, ../_sass/style.scss */
+/* line 434, ../_sass/style.scss */
 .scene:nth-child(2) .poster {
   background-image: url(https://cdn.kiwicollection.com/media/property/PR003362/xl/003362-03-dsc0967.jpg);
 }
 
-/* line 437, ../_sass/style.scss */
+/* line 438, ../_sass/style.scss */
 .scene:nth-child(3) .poster {
   background-image: url(http://www.wmagazine.com/wp-content/uploads/2012/11/blog-Micato-Safaris-vehicle-and-lion.jpg);
 }
 
-/* line 441, ../_sass/style.scss */
+/* line 442, ../_sass/style.scss */
 .scene:nth-child(4) .poster {
   background-image: url(http://o.aolcdn.com/hss/storage/adam/5103f3bb4a83631d50b07d486e3f15c0/dv2074040.jpg);
 }
 
-/* line 451, ../_sass/style.scss */
+/* line 452, ../_sass/style.scss */
 .scene:nth-child(2) .info header {
   background-image: url();
 }
 
-/* line 455, ../_sass/style.scss */
+/* line 456, ../_sass/style.scss */
 .scene:nth-child(3) .info header {
   background-image: url();
 }
 
 /** Button */
-/* line 474, ../_sass/style.scss */
+/* line 475, ../_sass/style.scss */
 .btn {
   color: white;
   text-decoration: none;
@@ -550,78 +551,78 @@ Posters and still images
   font-size: 14px;
 }
 
-/* line 482, ../_sass/style.scss */
+/* line 483, ../_sass/style.scss */
 .btn-green {
   background: #2ecc71;
 }
-/* line 465, ../_sass/style.scss */
+/* line 466, ../_sass/style.scss */
 .btn-green:hover {
   background: #26ab5f;
   transition: all 0.3s ease;
 }
-/* line 469, ../_sass/style.scss */
+/* line 470, ../_sass/style.scss */
 .btn-green:active {
   background: #176437;
 }
 
-/* line 486, ../_sass/style.scss */
+/* line 487, ../_sass/style.scss */
 .btn-blue {
   background: #3498db;
 }
-/* line 465, ../_sass/style.scss */
+/* line 466, ../_sass/style.scss */
 .btn-blue:hover {
   background: #2383c4;
   transition: all 0.3s ease;
 }
-/* line 469, ../_sass/style.scss */
+/* line 470, ../_sass/style.scss */
 .btn-blue:active {
   background: #16527a;
 }
 
-/* line 490, ../_sass/style.scss */
+/* line 491, ../_sass/style.scss */
 .btn-aqua {
   background: #40bbc8;
 }
-/* line 465, ../_sass/style.scss */
+/* line 466, ../_sass/style.scss */
 .btn-aqua:hover {
   background: #32a2ad;
   transition: all 0.3s ease;
 }
-/* line 469, ../_sass/style.scss */
+/* line 470, ../_sass/style.scss */
 .btn-aqua:active {
   background: #1f636a;
 }
 
-/* line 494, ../_sass/style.scss */
+/* line 495, ../_sass/style.scss */
 .btn-yellow {
   background: #f1c40f;
 }
-/* line 465, ../_sass/style.scss */
+/* line 466, ../_sass/style.scss */
 .btn-yellow:hover {
   background: #cba50c;
   transition: all 0.3s ease;
 }
-/* line 469, ../_sass/style.scss */
+/* line 470, ../_sass/style.scss */
 .btn-yellow:active {
   background: #796307;
 }
 
-/* line 498, ../_sass/style.scss */
+/* line 499, ../_sass/style.scss */
 .btn-red {
   background: #e74c3c;
 }
-/* line 465, ../_sass/style.scss */
+/* line 466, ../_sass/style.scss */
 .btn-red:hover {
   background: #df2e1b;
   transition: all 0.3s ease;
 }
-/* line 469, ../_sass/style.scss */
+/* line 470, ../_sass/style.scss */
 .btn-red:active {
   background: #921e12;
 }
 
 /*Other Stylez*/
-/* line 503, ../_sass/style.scss */
+/* line 504, ../_sass/style.scss */
 .wrap {
   margin: 0 auto;
   width: 800px;
