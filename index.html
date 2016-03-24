@@ -41,7 +41,7 @@
             </div>
           </div>
 
-          <div class="module">
+          <div class="module events">
             <h2>Events</h2>
             <p>
               More details to be added as the date approaches.
@@ -89,7 +89,7 @@
             </div>
           </div>
 
-          <div class="module">
+          <div class="module hotels">
             <h2>Travel</h2>
             <p>
               Destination - New Orleans!
@@ -146,32 +146,37 @@
               We love New Orleans, and we hope that you can take some time to
               enjoy the city. Here are some of our favorite things.
             </p>
-            <img src="/images/goodtimesroll.gif">
+
+            <!-- <img src="/images/goodtimesroll.gif"> -->
 
             <section>
               <h3>Drinks</h3>
-              <img src="/images/Carousel60s.jpg">
+              <div class="drink-img">
+                <img src="/images/Carousel60s.jpg">
+              </div>
+              <div class="drink-desc">
+                <p>
+                  <a href="http://hotelmonteleone.com/entertainment/carousel-bar/">
+                    Carousel Bar at Hotel Monteleone
+                  </a> – try to get a seat on the moving carousel!
+                </p>
 
-              <p>
-                <a href="http://hotelmonteleone.com/entertainment/carousel-bar/">
-                  Carousel Bar at Hotel Monteleone
-                </a> – try to get a seat on the moving carousel!
-              </p>
+                <p>
+                  <a href="http://therooseveltneworleans.com/dining/the-sazerac-bar.html">
+                    Sazerac Bar at Roosevelt Hotel
+                  </a> – original New Orleans cocktail
+                </p>
 
-              <p>
-                <a href="http://therooseveltneworleans.com/dining/the-sazerac-bar.html">
-                  Sazerac Bar at Roosevelt Hotel
-                </a> – original New Orleans cocktail
-              </p>
-
-              <p>
-                <a href="http://www.patobriens.com/patobriens/neworleans/">
-                  Piano Bar at Pat O'Briens
-                </a> – request your favorite songs (insiders
-                tip: Pat O’Briens has three connected bars in the French Quarter
-                and the “original” bar has the cheapest drinks in the Quarter)
-              </p>
+                <p>
+                  <a href="http://www.patobriens.com/patobriens/neworleans/">
+                    Piano Bar at Pat O'Briens
+                  </a> – request your favorite songs (insiders
+                  tip: Pat O’Briens has three connected bars in the French Quarter
+                  and the “original” bar has the cheapest drinks in the Quarter)
+                </p>
+              </div>
             </section>
+            <div style="clear:both;"></div>
 
             <section>
               <h3>Food</h3>
@@ -183,25 +188,31 @@
                 on your trip?
               </p>
 
-              <ul>
-                <li>Brunch at <a href="http://www.cafeamelie.com/">Café
-                    Amelie</a> – across from the Cornstalk Hotel (ties to Iowa!)
-                <li>Beignets and coffee
-                    at <a href="http://cafedumonde.com/locations">Café du Monde
-                    French Market location</a> – long lines for tables; take-out
-                    line may be faster.
-                <li><a href="http://revolutionnola.com/restaurant_revolution_menu.html">
-                    Restaurant R'evolution</a> – delicious and more casual in the bar area
-                <li>Try a Muffuletta
-                    from <a href="http://www.yelp.com/biz/central-grocery-new-orleans">Central
-                    Grocery</a> – classic!
-                <li>Po Boy at <a href="http://johnnyspoboys.com/">Johnny's Po-Boys</a> – classic!
-                <li><a href="http://www.commanderspalace.com/">Commander's Palace</a> 
-                    is the dining institution (reservation required)
-              </ul>
+              <div class="food-desc">
+                <ul>
+                  <li>Brunch at <a href="http://www.cafeamelie.com/">Café
+                      Amelie</a> – across from the Cornstalk Hotel (ties to Iowa!)
+                  <li>Beignets and coffee
+                      at <a href="http://cafedumonde.com/locations">Café du Monde
+                      French Market location</a> – long lines for tables; take-out
+                      line may be faster.
+                  <li><a href="http://revolutionnola.com/restaurant_revolution_menu.html">
+                      Restaurant R'evolution</a> – delicious and more casual in the bar area
+                  <li>Try a Muffuletta
+                      from <a href="http://www.yelp.com/biz/central-grocery-new-orleans">Central
+                      Grocery</a> – classic!
+                  <li>Po Boy at <a href="http://johnnyspoboys.com/">Johnny's Po-Boys</a> – classic!
+                  <li><a href="http://www.commanderspalace.com/">Commander's Palace</a> 
+                      is the dining institution (reservation required)
+                </ul>
+              </div>
 
-              <img src="/images/palace.jpg">
+              <div class="food-img">
+                <img src="/images/palace.jpg">
+              </div>
+              
             </section>
+            <div style="clear:both;"></div>
 
             <section>
               <h3>Activities</h3>
@@ -215,15 +226,18 @@
             </section>
           </div>
 
-          <div class="module">
+          <div class="module registry">
             <h2>Registry</h2>
             <p>
               Your presence is your present! But for those that wish to, we have registered at Macy's and have a Honey Fund.
             </p>
             <a href="http://www1.macys.com/registry/wedding/guest/?registryId=6539938">
-              <img src="/images/Macys%20Logo.png">
+              <img src="/images/Macys%20Logo.png" style="max-width:200px;">
             </a>
-            {% include registry.html %}
+
+            <a href="https://wanderable.com/ingrob">
+              Honeyfund
+            </a>
           </div>
 
           <div class="module">

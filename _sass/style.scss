@@ -162,18 +162,19 @@ a {
 
 .container {
     @include background-image(url(/images/goldbackground.jpg));
-    @include container();
+    @include container(1000px);
     min-height: 1000px;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 30px;
-    border-top: 1px #CEDFEA solid;
+    border: 2px #CEDFEA solid;
 }
 
 .module {
-    border-left: solid 10px #cedfea;
-    border-right: solid 1px #cedfea;
+    /* border-left: solid 10px #cedfea; */
+    border: solid 1px #cedfea;
     background-color: rgba(250, 250, 255, 0.8);
+    border-radius: 25px;
 }
 
 .module {
@@ -197,12 +198,18 @@ a {
         @include span(6);
     }
 
+    &.events {
+        width: span(6);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .event {
         overflow: hidden;
-        @include span(12 last);
-        @include susy-breakpoint($bp-medium, $susy) {
-            @include span(6 of 12);
-        }
+        /* @include span(12 last); */
+        /* @include susy-breakpoint($bp-medium, $susy) { */
+            /* @include span(6 of 12); */
+        /* } */
         /* @include susy-breakpoint($bp-large, $susy) { */
         /*     @include span(4 of 12); */
         /* } */
@@ -211,17 +218,41 @@ a {
             max-width: 100%;
             min-width: 200px;
         }
+        /* &:last-child { */
+        /*     @include last; */
+        /* } */
+    }
+
+    &.hotels {
+    }
+
+    .hotel {
+        /* @include gallery(5 of 10); */
+        img { 
+            max-width: 100%;
+        }
         &:last-child {
             @include last;
         }
     }
 
-    .hotel {
-        @include span(50%);
-        @include gallery(4 of 12);
-        img { 
-            max-width: 100%;
-        }
+    .nola section {
+    }
+
+    .drink-img {
+        @include span(4);
+        overflow: hidden;
+    }
+    .drink-desc {
+        @include span(7);
+    }
+
+    .food-img {
+        @include span(4);
+        overflow: hidden;
+    }
+    .food-desc {
+        @include span(7);
     }
 }
 
