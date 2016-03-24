@@ -63,7 +63,8 @@ h2 {
 #banner {
     font-family: 'Open Sans', Helvetica, sans-serif;
 
-    @include background-image(linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/banner.jpg"));
+    /* @include background-image(linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/banner.jpg")); */
+    @include background-image(url("/images/banner.jpg"));
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -222,6 +223,10 @@ h2 {
             max-width: 100%;
         }
     }
+}
+
+.nola img {
+    max-width: 300px;
 }
 
 /*************************************

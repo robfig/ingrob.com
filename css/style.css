@@ -59,12 +59,8 @@ h2 {
 /* line 63, ../_sass/style.scss */
 #banner {
   font-family: 'Open Sans', Helvetica, sans-serif;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjMiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4zIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url("/images/banner.jpg");
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.3))), url("/images/banner.jpg");
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/banner.jpg");
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/banner.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/banner.jpg");
+  /* @include background-image(linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/banner.jpg")); */
+  background-image: url("/images/banner.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -82,11 +78,11 @@ h2 {
   color: white;
 }
 
-/* line 81, ../_sass/style.scss */
+/* line 82, ../_sass/style.scss */
 #inner {
   margin-left: 25%;
 }
-/* line 83, ../_sass/style.scss */
+/* line 84, ../_sass/style.scss */
 #inner h2 {
   display: inline-block;
   font-size: 1.75em;
@@ -104,7 +100,7 @@ h2 {
   -webkit-transition: -webkit-transform 0.85s ease;
   transition: transform 0.85s ease;
 }
-/* line 94, ../_sass/style.scss */
+/* line 95, ../_sass/style.scss */
 #inner h2:before, #inner h2:after {
   -moz-transition: width 0.35s ease;
   -o-transition: width 0.35s ease;
@@ -121,17 +117,17 @@ h2 {
   width: 100%;
   background-color: white;
 }
-/* line 106, ../_sass/style.scss */
+/* line 107, ../_sass/style.scss */
 #inner h2:before {
   top: 0;
   left: 0;
 }
-/* line 111, ../_sass/style.scss */
+/* line 112, ../_sass/style.scss */
 #inner h2:after {
   bottom: 0;
   right: 0;
 }
-/* line 116, ../_sass/style.scss */
+/* line 117, ../_sass/style.scss */
 #inner p {
   text-transform: uppercase;
   letter-spacing: 0.225em;
@@ -142,7 +138,7 @@ h2 {
   opacity: 1;
 }
 
-/* line 124, ../_sass/style.scss */
+/* line 125, ../_sass/style.scss */
 .more {
   -moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
   -o-transition: -o-transform 0.75s ease, opacity 0.75s ease;
@@ -174,7 +170,7 @@ h2 {
   z-index: 1;
 }
 
-/* line 147, ../_sass/style.scss */
+/* line 148, ../_sass/style.scss */
 .more:after {
   background-image: url("images/arrow.svg");
   background-position: center;
@@ -190,7 +186,7 @@ h2 {
   width: 1.5em;
 }
 
-/* line 162, ../_sass/style.scss */
+/* line 163, ../_sass/style.scss */
 .container {
   background-image: url(/images/goldbackground.jpg);
   max-width: 100%;
@@ -209,26 +205,26 @@ h2 {
   clear: both;
 }
 
-/* line 172, ../_sass/style.scss */
+/* line 173, ../_sass/style.scss */
 .module {
   border-left: solid 10px #cedfea;
   border-right: solid 1px #cedfea;
   background-color: rgba(250, 250, 255, 0.8);
 }
 
-/* line 178, ../_sass/style.scss */
+/* line 179, ../_sass/style.scss */
 .module {
   padding: 1.69492%;
   margin-top: 25px;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 180, ../_sass/style.scss */
+/* line 181, ../_sass/style.scss */
 .module h2 {
   color: gray;
 }
 
-/* line 187, ../_sass/style.scss */
+/* line 188, ../_sass/style.scss */
 .module {
   max-width: 100%;
   margin-left: auto;
@@ -240,7 +236,7 @@ h2 {
   display: block;
   clear: both;
 }
-/* line 190, ../_sass/style.scss */
+/* line 191, ../_sass/style.scss */
 .module .header {
   width: 32.20339%;
   float: left;
@@ -248,13 +244,13 @@ h2 {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 195, ../_sass/style.scss */
+/* line 196, ../_sass/style.scss */
 .module .desc {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%;
 }
-/* line 199, ../_sass/style.scss */
+/* line 200, ../_sass/style.scss */
 .module .event {
   overflow: hidden;
   width: 100%;
@@ -266,24 +262,24 @@ h2 {
   /* @include gallery(6 of 12); */
 }
 @media (min-width: 32em) {
-  /* line 199, ../_sass/style.scss */
+  /* line 200, ../_sass/style.scss */
   .module .event {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 209, ../_sass/style.scss */
+/* line 210, ../_sass/style.scss */
 .module .event img {
   max-width: 100%;
   min-width: 200px;
 }
-/* line 213, ../_sass/style.scss */
+/* line 214, ../_sass/style.scss */
 .module .event:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 218, ../_sass/style.scss */
+/* line 219, ../_sass/style.scss */
 .module .hotel {
   width: 50%;
   float: left;
@@ -310,21 +306,26 @@ h2 {
   margin-right: -100%;
   clear: none;
 }
-/* line 221, ../_sass/style.scss */
+/* line 222, ../_sass/style.scss */
 .module .hotel img {
   max-width: 100%;
+}
+
+/* line 228, ../_sass/style.scss */
+.nola img {
+  max-width: 300px;
 }
 
 /*************************************
 Build the scene and rotate on hover
 **************************************/
-/* line 234, ../_sass/style.scss */
+/* line 239, ../_sass/style.scss */
 .stage {
   list-style: none;
   padding: 0;
 }
 
-/* line 239, ../_sass/style.scss */
+/* line 244, ../_sass/style.scss */
 .scene {
   width: 520px;
   height: 300px;
@@ -335,7 +336,7 @@ Build the scene and rotate on hover
   perspective: 2000px;
 }
 
-/* line 247, ../_sass/style.scss */
+/* line 252, ../_sass/style.scss */
 .movie {
   width: 520px;
   height: 300px;
@@ -350,7 +351,7 @@ Build the scene and rotate on hover
   transition: transform 350ms;
 }
 
-/* line 261, ../_sass/style.scss */
+/* line 266, ../_sass/style.scss */
 .movie:hover {
   -webkit-transform: rotateY(-78deg) translateZ(20px);
   -moz-transform: rotateY(-78deg) translateZ(20px);
@@ -360,7 +361,7 @@ Build the scene and rotate on hover
 /*************************************
 Transform and style the two planes
 **************************************/
-/* line 271, ../_sass/style.scss */
+/* line 276, ../_sass/style.scss */
 .movie .poster,
 .movie .info {
   position: absolute;
@@ -372,7 +373,7 @@ Transform and style the two planes
   backface-visibility: hidden;
 }
 
-/* line 282, ../_sass/style.scss */
+/* line 287, ../_sass/style.scss */
 .movie .poster {
   -webkit-transform: translateZ(260px);
   -moz-transform: translateZ(260px);
@@ -381,7 +382,7 @@ Transform and style the two planes
   background-repeat: no-repeat;
 }
 
-/* line 290, ../_sass/style.scss */
+/* line 295, ../_sass/style.scss */
 .movie .info {
   -webkit-transform: rotateY(90deg) translateZ(260px);
   -moz-transform: rotateY(90deg) translateZ(260px);
@@ -393,7 +394,7 @@ Transform and style the two planes
 /*************************************
 Shadow beneath the 3D object
 **************************************/
-/* line 302, ../_sass/style.scss */
+/* line 307, ../_sass/style.scss */
 .csstransforms3d .movie::after {
   content: '';
   width: 520px;
@@ -412,7 +413,7 @@ Shadow beneath the 3D object
   transition: box-shadow 350ms;
 }
 
-/* line 320, ../_sass/style.scss */
+/* line 325, ../_sass/style.scss */
 .csstransforms3d .movie:hover::after {
   box-shadow: 20px -5px 50px rgba(0, 0, 0, 0.3);
 }
@@ -420,7 +421,7 @@ Shadow beneath the 3D object
 /*************************************
 Movie information
 **************************************/
-/* line 328, ../_sass/style.scss */
+/* line 333, ../_sass/style.scss */
 .info header {
   padding: 7px 10px;
   font-weight: bold;
@@ -437,13 +438,13 @@ Movie information
   clear: both;
 }
 
-/* line 336, ../_sass/style.scss */
+/* line 341, ../_sass/style.scss */
 .info header h1 {
   margin: 0 0 2px;
   font-size: 1.4em;
 }
 
-/* line 341, ../_sass/style.scss */
+/* line 346, ../_sass/style.scss */
 .info p {
   padding: 1.2em 1.4em;
   margin: 2px 0 0;
@@ -453,14 +454,14 @@ Movie information
   font-size: 16px;
 }
 
-/* line 351, ../_sass/style.scss */
+/* line 356, ../_sass/style.scss */
 .details {
   width: 40.67797%;
   float: left;
   margin-right: 1.69492%;
 }
 
-/* line 355, ../_sass/style.scss */
+/* line 360, ../_sass/style.scss */
 .checkout {
   width: 40.67797%;
   float: left;
@@ -470,7 +471,7 @@ Movie information
 /*************************************
 Generate "lighting" using box shadows
 **************************************/
-/* line 363, ../_sass/style.scss */
+/* line 368, ../_sass/style.scss */
 .movie .poster,
 .movie .info,
 .movie .info header {
@@ -479,23 +480,23 @@ Generate "lighting" using box shadows
   transition: box-shadow 350ms;
 }
 
-/* line 371, ../_sass/style.scss */
+/* line 376, ../_sass/style.scss */
 .csstransforms3d .movie .poster {
   box-shadow: inset 0px 0px 40px rgba(255, 255, 255, 0);
 }
 
-/* line 375, ../_sass/style.scss */
+/* line 380, ../_sass/style.scss */
 .csstransforms3d .movie:hover .poster {
   box-shadow: inset 300px 0px 40px rgba(255, 255, 255, 0.8);
 }
 
-/* line 379, ../_sass/style.scss */
+/* line 384, ../_sass/style.scss */
 .csstransforms3d .movie .info,
 .csstransforms3d .movie .info header {
   box-shadow: inset -300px 0px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* line 384, ../_sass/style.scss */
+/* line 389, ../_sass/style.scss */
 .csstransforms3d .movie:hover .info,
 .csstransforms3d .movie:hover .info header {
   box-shadow: inset 0px 0px 40px transparent;
@@ -504,38 +505,38 @@ Generate "lighting" using box shadows
 /*************************************
 Posters and still images
 **************************************/
-/* line 393, ../_sass/style.scss */
+/* line 398, ../_sass/style.scss */
 .scene:nth-child(1) .movie .poster {
   background-image: url(http://www.anywherenrado.com/wp-content/uploads/2015/09/Migration.jpg);
 }
 
-/* line 397, ../_sass/style.scss */
+/* line 402, ../_sass/style.scss */
 .scene:nth-child(2) .poster {
   background-image: url(https://cdn.kiwicollection.com/media/property/PR003362/xl/003362-03-dsc0967.jpg);
 }
 
-/* line 401, ../_sass/style.scss */
+/* line 406, ../_sass/style.scss */
 .scene:nth-child(3) .poster {
   background-image: url(http://www.wmagazine.com/wp-content/uploads/2012/11/blog-Micato-Safaris-vehicle-and-lion.jpg);
 }
 
-/* line 405, ../_sass/style.scss */
+/* line 410, ../_sass/style.scss */
 .scene:nth-child(4) .poster {
   background-image: url(http://o.aolcdn.com/hss/storage/adam/5103f3bb4a83631d50b07d486e3f15c0/dv2074040.jpg);
 }
 
-/* line 415, ../_sass/style.scss */
+/* line 420, ../_sass/style.scss */
 .scene:nth-child(2) .info header {
   background-image: url();
 }
 
-/* line 419, ../_sass/style.scss */
+/* line 424, ../_sass/style.scss */
 .scene:nth-child(3) .info header {
   background-image: url();
 }
 
 /** Button */
-/* line 438, ../_sass/style.scss */
+/* line 443, ../_sass/style.scss */
 .btn {
   color: white;
   text-decoration: none;
@@ -544,78 +545,78 @@ Posters and still images
   font-size: 14px;
 }
 
-/* line 446, ../_sass/style.scss */
+/* line 451, ../_sass/style.scss */
 .btn-green {
   background: #2ecc71;
 }
-/* line 429, ../_sass/style.scss */
+/* line 434, ../_sass/style.scss */
 .btn-green:hover {
   background: #26ab5f;
   transition: all 0.3s ease;
 }
-/* line 433, ../_sass/style.scss */
+/* line 438, ../_sass/style.scss */
 .btn-green:active {
   background: #176437;
 }
 
-/* line 450, ../_sass/style.scss */
+/* line 455, ../_sass/style.scss */
 .btn-blue {
   background: #3498db;
 }
-/* line 429, ../_sass/style.scss */
+/* line 434, ../_sass/style.scss */
 .btn-blue:hover {
   background: #2383c4;
   transition: all 0.3s ease;
 }
-/* line 433, ../_sass/style.scss */
+/* line 438, ../_sass/style.scss */
 .btn-blue:active {
   background: #16527a;
 }
 
-/* line 454, ../_sass/style.scss */
+/* line 459, ../_sass/style.scss */
 .btn-aqua {
   background: #40bbc8;
 }
-/* line 429, ../_sass/style.scss */
+/* line 434, ../_sass/style.scss */
 .btn-aqua:hover {
   background: #32a2ad;
   transition: all 0.3s ease;
 }
-/* line 433, ../_sass/style.scss */
+/* line 438, ../_sass/style.scss */
 .btn-aqua:active {
   background: #1f636a;
 }
 
-/* line 458, ../_sass/style.scss */
+/* line 463, ../_sass/style.scss */
 .btn-yellow {
   background: #f1c40f;
 }
-/* line 429, ../_sass/style.scss */
+/* line 434, ../_sass/style.scss */
 .btn-yellow:hover {
   background: #cba50c;
   transition: all 0.3s ease;
 }
-/* line 433, ../_sass/style.scss */
+/* line 438, ../_sass/style.scss */
 .btn-yellow:active {
   background: #796307;
 }
 
-/* line 462, ../_sass/style.scss */
+/* line 467, ../_sass/style.scss */
 .btn-red {
   background: #e74c3c;
 }
-/* line 429, ../_sass/style.scss */
+/* line 434, ../_sass/style.scss */
 .btn-red:hover {
   background: #df2e1b;
   transition: all 0.3s ease;
 }
-/* line 433, ../_sass/style.scss */
+/* line 438, ../_sass/style.scss */
 .btn-red:active {
   background: #921e12;
 }
 
 /*Other Stylez*/
-/* line 467, ../_sass/style.scss */
+/* line 472, ../_sass/style.scss */
 .wrap {
   margin: 0 auto;
   width: 800px;
