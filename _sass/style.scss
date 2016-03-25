@@ -162,16 +162,21 @@ a {
 
 .container {
     @include background-image(url(/images/goldbackground.jpg));
-    @include container(1000px);
-    min-height: 1000px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 30px;
+    /* @include container(1000px); */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0 50px 0;
+
+    @include susy-breakpoint($bp-large, $susy) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     border: 2px #CEDFEA solid;
 }
 
 .module {
-    /* border-left: solid 10px #cedfea; */
     border: solid 1px #cedfea;
     background-color: rgba(250, 250, 255, 0.8);
     border-radius: 25px;
@@ -191,48 +196,61 @@ a {
     @include container();
 
     .header {
-        @include span(4);
+        @include span(12);
+        @include susy-breakpoint($bp-medium, $susy) {
+            @include span(4);
+        }
         display: table-cell;
         vertical-align: middle;
     }
     .desc {
-        @include span(6);
+        @include span(12);
+        @include susy-breakpoint($bp-medium, $susy) {
+            @include span(6);
+        }
     }
 
-    &.events {
-        width: span(6);
-        margin-left: auto;
-        margin-right: auto;
-    }
+    /* &.events { */
+    /*     width: span(12); */
+    /*     margin-left: auto; */
+    /*     margin-right: auto; */
+    /* } */
 
     .event {
         overflow: hidden;
-        /* @include span(12 last); */
-        /* @include susy-breakpoint($bp-medium, $susy) { */
-            /* @include span(6 of 12); */
-        /* } */
-        /* @include susy-breakpoint($bp-large, $susy) { */
-        /*     @include span(4 of 12); */
-        /* } */
-        /* @include gallery(6 of 12); */
         img { 
             max-width: 100%;
             min-width: 200px;
         }
-        /* &:last-child { */
-        /*     @include last; */
-        /* } */
-    }
+        @include span(6);
+        margin-left: auto;
+        margin-right: auto;
 
-    &.hotels {
+        &.reception {
+            @include span(6);
+            @include last;
+        }
+        &.wedding {
+            @include span(12);
+            @include pad(3 at 1, 3 at 9);
+            /* width: span(12); */
+            text-align: center;
+        }
     }
 
     .hotel {
-        /* @include gallery(5 of 10); */
+        /* @include gallery(6); */
+        @include span(6);
+        /* margin-left: auto; */
+        /* margin-right: auto; */
         img { 
             max-width: 100%;
         }
-        &:last-child {
+
+        &.hotelprovincial {
+            @include last;
+        }
+        &.whitney {
             @include last;
         }
     }
@@ -241,268 +259,55 @@ a {
     }
 
     .drink-img {
-        @include span(4);
+        @include span(12);
         overflow: hidden;
+        @include susy-breakpoint($bp-medium, $susy) {
+            @include span(4);
+        }
     }
     .drink-desc {
-        @include span(7);
+        @include span(12);
+        @include susy-breakpoint($bp-medium, $susy) {
+            @include span(7);
+        }
     }
 
     .food-img {
-        @include span(4);
+        @include span(12);
+        @include susy-breakpoint($bp-medium, $susy) {
+            @include span(4);
+        }
+        margin-top: 25px;
         overflow: hidden;
     }
     .food-desc {
-        @include span(7);
+        @include span(12);
+        @include susy-breakpoint($bp-medium, $susy) {
+            @include span(7);
+        }
     }
+
+    .registry-img {
+        @include span(12);
+        text-align: center;
+        @include susy-breakpoint($bp-medium, $susy) {
+            @include span(6);
+            &:last-child {
+                @include last;
+            }
+        }
+    }
+
+    /* ul { */
+    /*     list-style-type: none; */
+    /*     list-style-position: outside; */
+
+    /*     li { */
+    /*         margin-top: 15px; */
+    /*     } */
+    /* } */
 }
 
 .nola img {
     max-width: 300px;
-}
-
-/*************************************
-Build the scene and rotate on hover
-**************************************/
-
-$cube-width: 520px;
-$cube-height: 300px;
-
-.stage {
-	list-style: none;
-	padding: 0;
-}
-
-.scene {
-	width: $cube-width;
-	height: $cube-height;
-	margin: 30px;
-	float: left;
-	@include perspective(2000px);
-}
-
-.movie {
-	width: $cube-width;
-	height: $cube-height;
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	-webkit-transform: translateZ(-$cube-width/2);
-	-moz-transform: translateZ(-$cube-width/2);
-	transform: translateZ(-$cube-width/2);
-	-webkit-transition: -webkit-transform 350ms;
-	-moz-transition: -moz-transform 350ms;
-	transition: transform 350ms;
-}
-
-.movie:hover {
-	-webkit-transform: rotateY(-78deg) translateZ(20px);
-	-moz-transform: rotateY(-78deg) translateZ(20px);
-	transform: rotateY(-78deg) translateZ(20px);
-}
-
-/*************************************
-Transform and style the two planes
-**************************************/
-
-.movie .poster, 
-.movie .info {
-	position: absolute;
-	width: $cube-width;
-	height: $cube-height;
-	background-color: #fff;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.movie .poster  {
-	-webkit-transform: translateZ($cube-width/2);
-	-moz-transform: translateZ($cube-width/2);
-	transform: translateZ($cube-width/2);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.movie .info {
-	-webkit-transform: rotateY(90deg) translateZ($cube-width/2);
-	-moz-transform: rotateY(90deg) translateZ($cube-width/2);
-	transform: rotateY(90deg) translateZ($cube-width/2);
-	border: 1px solid #B8B5B5;
-	font-size: 0.75em;
-}
-
-/*************************************
-Shadow beneath the 3D object
-**************************************/
-
-.csstransforms3d .movie::after {
-	content: '';
-	width: $cube-width;
-	height: $cube-height;
-	position: absolute;
-	bottom: 0;
-	box-shadow: 0 30px 50px rgba(0,0,0,0.3);
-	-webkit-transform-origin: 100% 100%;
-	-moz-transform-origin: 100% 100%;
-	transform-origin: 100% 100%;
-	-webkit-transform: rotateX(90deg) translateY($cube-width/2);
-	-moz-transform: rotateX(90deg) translateY($cube-width/2);
-	transform: rotateX(90deg) translateY($cube-width/2);
-	-webkit-transition: box-shadow 350ms;
-	-moz-transition: box-shadow 350ms;
-	transition: box-shadow 350ms;
-}
-
-.csstransforms3d .movie:hover::after {
-	box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
-}
-
-/*************************************
-Movie information
-**************************************/
-
-.info header {
-	padding: 7px 10px;
-	font-weight: bold;
-	height: 195px;
-        font-size: 34px;
-        @include container();
-}
-
-.info header h1 {
-	margin: 0 0 2px;
-	font-size: 1.4em;
-}
-
-.info p {
-	padding: 1.2em 1.4em;
-	margin: 2px 0 0;
-	font-weight: 700;
-	color: #666;
-	line-height: 1.4em;
-	// border-top: 10px solid #555;
-        font-size: 16px;
-}
-
-.details {
-    @include span(5);
-}
-
-.checkout {
-    @include span(5);
-}
-
-/*************************************
-Generate "lighting" using box shadows
-**************************************/
-
-.movie .poster,
-.movie .info,
-.movie .info header {
-	-webkit-transition: box-shadow 350ms;
-	-moz-transition: box-shadow 350ms;
-	transition: box-shadow 350ms;
-}
-
-.csstransforms3d .movie .poster {
-	box-shadow: inset 0px 0px 40px rgba(255,255,255,0);
-}
-
-.csstransforms3d .movie:hover .poster {
-	box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
-}
-
-.csstransforms3d .movie .info, 
-.csstransforms3d .movie .info header {
-	box-shadow: inset -300px 0px 40px rgba(0,0,0,0.5);
-}
-
-.csstransforms3d .movie:hover .info, 
-.csstransforms3d .movie:hover .info header {
-	box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
-}
-
-/*************************************
-Posters and still images
-**************************************/
-
-.scene:nth-child(1) .movie .poster {
-    background-image: url(http://www.anywherenrado.com/wp-content/uploads/2015/09/Migration.jpg);
-}
-
-.scene:nth-child(2) .poster {
-    background-image: url(https://cdn.kiwicollection.com/media/property/PR003362/xl/003362-03-dsc0967.jpg);
-}
-
-.scene:nth-child(3) .poster {
-    background-image: url(http://www.wmagazine.com/wp-content/uploads/2012/11/blog-Micato-Safaris-vehicle-and-lion.jpg);
-}
-
-.scene:nth-child(4) .poster {
-    background-image: url(http://o.aolcdn.com/hss/storage/adam/5103f3bb4a83631d50b07d486e3f15c0/dv2074040.jpg);
-}
-
-.scene:nth-child(1) .info header {
-//    @include background-image(url(/images/bluebackground.jpg));
-//    background-size: cover;
-//    background-repeat: repeat;
-}
-
-.scene:nth-child(2) .info header {
-    background-image: url();
-}
-
-.scene:nth-child(3) .info header {
-    background-image: url();
-}
-
-
-/** Button */
-
-
-@mixin button-bg($bg) {
-  background: $bg;
-  &:hover {
-    background:darken($bg,8%);
-    transition: all 0.3s ease;
-  }
-  &:active {
-    background:darken($bg,25%);
-  } 
-}
-
-.btn {
- color:white;
- text-decoration:none;
- padding:5px 10px;
- border-radius:3px;
- font-size:14px;
-}
-
-.btn-green {
-   @include button-bg(#2ecc71);
-}
-
-.btn-blue {
-   @include button-bg(#3498db);
-}
-
-.btn-aqua {
-   @include button-bg(#40bbc8);
-}
-
-.btn-yellow{
-   @include button-bg(#f1c40f);
-}
-
-.btn-red {
-   @include button-bg(#e74c3c);
-}
-
-/*Other Stylez*/
-.wrap {
-  margin:0 auto;
-  width:800px;
-  text-align:center;
 }
