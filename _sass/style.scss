@@ -222,19 +222,21 @@ a {
             max-width: 100%;
             min-width: 200px;
         }
-        @include span(6);
+        @include span(12);
+        @include susy-breakpoint($bp-medium, $susy) {
+            @include span(6);
+        }
         margin-left: auto;
         margin-right: auto;
 
         &.reception {
-            @include span(6);
             @include last;
         }
         &.wedding {
             @include span(12);
-            @include pad(3 at 1, 3 at 9);
-            /* width: span(12); */
-            text-align: center;
+            @include susy-breakpoint($bp-medium, $susy) {
+                @include pad(3 at 1, 3 at 9);
+            }
         }
     }
 
