@@ -67,7 +67,7 @@ a {
     @include background-image(url("/images/banner.jpg"));
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: 50% 0;
     background-size: 1600px; /* for iphone */
     @include susy-breakpoint($bp-medium, $susy) {
         background-size: cover;
