@@ -51,8 +51,8 @@ a {
   /* @include background-image(linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/banner.jpg")); */
   background-image: url("/images/banner.jpg");
   background-attachment: fixed;
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: 50%;
   background-size: 1600px;
   /* for iphone */
   padding-top: 0;
@@ -81,14 +81,15 @@ a {
   /* line 53, ../_sass/style.scss */
   #banner {
     background-size: cover;
+    background-position: center center;
   }
 }
 
-/* line 85, ../_sass/style.scss */
+/* line 86, ../_sass/style.scss */
 #inner {
   margin-left: 25%;
 }
-/* line 87, ../_sass/style.scss */
+/* line 88, ../_sass/style.scss */
 #inner h2 {
   display: inline-block;
   font-size: 1.75em;
@@ -106,7 +107,7 @@ a {
   -webkit-transition: -webkit-transform 0.85s ease;
   transition: transform 0.85s ease;
 }
-/* line 98, ../_sass/style.scss */
+/* line 99, ../_sass/style.scss */
 #inner h2:before, #inner h2:after {
   -moz-transition: width 0.35s ease;
   -o-transition: width 0.35s ease;
@@ -123,17 +124,17 @@ a {
   width: 100%;
   background-color: white;
 }
-/* line 110, ../_sass/style.scss */
+/* line 111, ../_sass/style.scss */
 #inner h2:before {
   top: 0;
   left: 0;
 }
-/* line 115, ../_sass/style.scss */
+/* line 116, ../_sass/style.scss */
 #inner h2:after {
   bottom: 0;
   right: 0;
 }
-/* line 120, ../_sass/style.scss */
+/* line 121, ../_sass/style.scss */
 #inner p {
   text-transform: uppercase;
   letter-spacing: 0.225em;
@@ -144,7 +145,7 @@ a {
   opacity: 1;
 }
 
-/* line 128, ../_sass/style.scss */
+/* line 129, ../_sass/style.scss */
 .more {
   -moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
   -o-transition: -o-transform 0.75s ease, opacity 0.75s ease;
@@ -176,7 +177,7 @@ a {
   z-index: 1;
 }
 
-/* line 151, ../_sass/style.scss */
+/* line 152, ../_sass/style.scss */
 .more:after {
   background-image: url("images/arrow.svg");
   background-position: center;
@@ -192,7 +193,7 @@ a {
   width: 1.5em;
 }
 
-/* line 166, ../_sass/style.scss */
+/* line 167, ../_sass/style.scss */
 .container {
   background-image: url(/images/goldbackground.jpg);
   /* @include container(1000px); */
@@ -203,21 +204,21 @@ a {
   border: 2px #CEDFEA solid;
 }
 @media (min-width: 60em) {
-  /* line 166, ../_sass/style.scss */
+  /* line 167, ../_sass/style.scss */
   .container {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 
-/* line 182, ../_sass/style.scss */
+/* line 183, ../_sass/style.scss */
 .module {
   border: solid 1px #cedfea;
   background-color: rgba(250, 250, 255, 0.8);
   border-radius: 25px;
 }
 
-/* line 188, ../_sass/style.scss */
+/* line 189, ../_sass/style.scss */
 .module {
   padding: 1.69492%;
   padding-top: 0;
@@ -225,12 +226,12 @@ a {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 191, ../_sass/style.scss */
+/* line 192, ../_sass/style.scss */
 .module h2 {
   color: gray;
 }
 
-/* line 198, ../_sass/style.scss */
+/* line 199, ../_sass/style.scss */
 .module {
   max-width: 100%;
   margin-left: auto;
@@ -254,7 +255,7 @@ a {
   display: block;
   clear: both;
 }
-/* line 201, ../_sass/style.scss */
+/* line 202, ../_sass/style.scss */
 .module .header {
   width: 100%;
   float: left;
@@ -264,14 +265,14 @@ a {
   vertical-align: middle;
 }
 @media (min-width: 32em) {
-  /* line 201, ../_sass/style.scss */
+  /* line 202, ../_sass/style.scss */
   .module .header {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 209, ../_sass/style.scss */
+/* line 210, ../_sass/style.scss */
 .module .desc {
   width: 100%;
   float: left;
@@ -279,14 +280,14 @@ a {
   margin-right: 0;
 }
 @media (min-width: 32em) {
-  /* line 209, ../_sass/style.scss */
+  /* line 210, ../_sass/style.scss */
   .module .desc {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 222, ../_sass/style.scss */
+/* line 223, ../_sass/style.scss */
 .module .event {
   overflow: hidden;
   width: 100%;
@@ -296,25 +297,25 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 224, ../_sass/style.scss */
+/* line 225, ../_sass/style.scss */
 .module .event img {
   max-width: 100%;
   min-width: 200px;
 }
 @media (min-width: 32em) {
-  /* line 222, ../_sass/style.scss */
+  /* line 223, ../_sass/style.scss */
   .module .event {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 235, ../_sass/style.scss */
+/* line 236, ../_sass/style.scss */
 .module .event.reception {
   float: right;
   margin-right: 0;
 }
-/* line 238, ../_sass/style.scss */
+/* line 239, ../_sass/style.scss */
 .module .event.wedding {
   width: 100%;
   float: left;
@@ -322,13 +323,13 @@ a {
   margin-right: 0;
 }
 @media (min-width: 32em) {
-  /* line 238, ../_sass/style.scss */
+  /* line 239, ../_sass/style.scss */
   .module .event.wedding {
     padding-left: 25.42373%;
     padding-right: 25.42373%;
   }
 }
-/* line 246, ../_sass/style.scss */
+/* line 247, ../_sass/style.scss */
 .module .hotel {
   /* @include gallery(6); */
   width: 49.15254%;
@@ -337,21 +338,21 @@ a {
   /* margin-left: auto; */
   /* margin-right: auto; */
 }
-/* line 251, ../_sass/style.scss */
+/* line 252, ../_sass/style.scss */
 .module .hotel img {
   max-width: 100%;
 }
-/* line 255, ../_sass/style.scss */
+/* line 256, ../_sass/style.scss */
 .module .hotel.hotelprovincial {
   float: right;
   margin-right: 0;
 }
-/* line 258, ../_sass/style.scss */
+/* line 259, ../_sass/style.scss */
 .module .hotel.whitney {
   float: right;
   margin-right: 0;
 }
-/* line 266, ../_sass/style.scss */
+/* line 267, ../_sass/style.scss */
 .module .drink-img {
   width: 100%;
   float: left;
@@ -360,14 +361,14 @@ a {
   overflow: hidden;
 }
 @media (min-width: 32em) {
-  /* line 266, ../_sass/style.scss */
+  /* line 267, ../_sass/style.scss */
   .module .drink-img {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 273, ../_sass/style.scss */
+/* line 274, ../_sass/style.scss */
 .module .drink-desc {
   width: 100%;
   float: left;
@@ -375,14 +376,14 @@ a {
   margin-right: 0;
 }
 @media (min-width: 32em) {
-  /* line 273, ../_sass/style.scss */
+  /* line 274, ../_sass/style.scss */
   .module .drink-desc {
     width: 57.62712%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 280, ../_sass/style.scss */
+/* line 281, ../_sass/style.scss */
 .module .food-img {
   width: 100%;
   float: left;
@@ -392,14 +393,14 @@ a {
   overflow: hidden;
 }
 @media (min-width: 32em) {
-  /* line 280, ../_sass/style.scss */
+  /* line 281, ../_sass/style.scss */
   .module .food-img {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 288, ../_sass/style.scss */
+/* line 289, ../_sass/style.scss */
 .module .food-desc {
   width: 100%;
   float: left;
@@ -407,14 +408,14 @@ a {
   margin-right: 0;
 }
 @media (min-width: 32em) {
-  /* line 288, ../_sass/style.scss */
+  /* line 289, ../_sass/style.scss */
   .module .food-desc {
     width: 57.62712%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 295, ../_sass/style.scss */
+/* line 296, ../_sass/style.scss */
 .module .registry-img {
   width: 100%;
   float: left;
@@ -423,20 +424,20 @@ a {
   text-align: center;
 }
 @media (min-width: 32em) {
-  /* line 295, ../_sass/style.scss */
+  /* line 296, ../_sass/style.scss */
   .module .registry-img {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
-  /* line 300, ../_sass/style.scss */
+  /* line 301, ../_sass/style.scss */
   .module .registry-img:last-child {
     float: right;
     margin-right: 0;
   }
 }
 
-/* line 316, ../_sass/style.scss */
+/* line 317, ../_sass/style.scss */
 .nola img {
   max-width: 300px;
 }

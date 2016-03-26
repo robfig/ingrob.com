@@ -66,11 +66,12 @@ a {
     /* @include background-image(linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/banner.jpg")); */
     @include background-image(url("/images/banner.jpg"));
     background-attachment: fixed;
-    background-position: center center;
     background-repeat: no-repeat;
+    background-position: 50%;
     background-size: 1600px; /* for iphone */
     @include susy-breakpoint($bp-medium, $susy) {
         background-size: cover;
+        background-position: center center;
     }
     padding-top: 0;
     height: 100vh;
