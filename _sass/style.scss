@@ -68,7 +68,10 @@ a {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1600px; /* for iphone */
+    @include susy-breakpoint($bp-medium, $susy) {
+        background-size: cover;
+    }
     padding-top: 0;
     height: 100vh;
     min-height: 35em;
