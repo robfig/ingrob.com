@@ -64,7 +64,7 @@ a {
     font-family: 'Open Sans', Helvetica, sans-serif;
 
     /* @include background-image(linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/banner.jpg")); */
-    @include background-image(url("/images/banner.jpg"));
+    @include background-image(url("../images/banner.jpg"));
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 0;
